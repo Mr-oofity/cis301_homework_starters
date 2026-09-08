@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "sireum logika",
+			"kind": "verifier (file)",
+			"problemMatcher": [
+				"$sireumProblemMatcher"
+			],
+			"label": "sireum logika: verifier (file)"
+		}
+	]
+}

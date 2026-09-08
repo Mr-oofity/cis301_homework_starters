@@ -20,3 +20,19 @@
 
 //YOU DO THIS
 //PUT YOUR FIRST TRUTH TABLE HERE
+          *     
+-------------------
+p q r # p & (q | r)
+-------------------
+F F F #   F    F
+F F T #   F    T
+F T F #   F    T
+F T T #   F    T
+T F F #   F    F
+T F T #   T    T
+T T F #   T    T
+T T T #   T    T
+-------------------
+Contingent
+T: [T F T] [T T F] [T T T]
+F: [F F F] [F F T] [F T F] [F T T] [T F F]

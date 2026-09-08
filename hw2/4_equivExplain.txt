@@ -19,6 +19,6 @@ To do this, right-click the 4_equivA.logika tab and select "Open to the side".
 
 
 
-
 //YOU DO THIS
 //PUT YOUR EXPLANATION HERE
+Because each sequence creates a final value match between each truth table, the 2 statements are equivelants 

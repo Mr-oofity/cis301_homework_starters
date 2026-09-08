@@ -2,7 +2,7 @@
 //3_parseTree.txt
 
 Draw a parse tree for the following formula:
-
+           *
 p ∨ ¬q ∧ r → ¬p ∨ q ∨ ¬r
 
 

@@ -6,7 +6,7 @@
 
 //That is, that:
 
-//p ∧ (q ∨ r) is equivalent to (p ∧ q) ∨ (p ∧ r)
+//p ∧ (q ∨ r) is equivalent to (p ∧ q) & (p ∧ r)
 
 
 //Put the first truth table in 4_equivA.logika and the second truth table in 4_equivB.logika
@@ -17,7 +17,21 @@
 //I recommend using split screen so you can see and edit all three files at once.
 //To do this, right-click the 4_equivA.logika tab and select "Open to the side".
 
-
-
 //YOU DO THIS
 //PUT YOUR SECOND TRUTH TABLE HERE
+                *
+---------------------------
+p q r # (p & q) | (p & r)
+---------------------------
+F F F #    F    F    F
+F F T #    F    F    F
+F T F #    F    F    F
+F T T #    F    F    F
+T F F #    F    F    F
+T F T #    F    T    T
+T T F #    T    T    F
+T T T #    T    T    T
+---------------------------
+Contingent
+T: [T F T] [T T F] [T T T]
+F: [F F F] [F F T] [F T F] [F T T] [T F F]
