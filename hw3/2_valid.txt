@@ -1,0 +1,62 @@
+Consider these propositional atoms:
+
+p: It is cold
+q: I build a snowman
+r: It snows
+s: I go sledding
+
+In each part:
+
+    a) Translate each premise and the conclusion to English using the propositional atoms above
+    b) If the argument is valid, write "valid" and a sentence explaining how you could prove the validity
+        of the argument (you do not need to do the proof -- just explain what you would need to do).
+        If the argument is NOT valid, write "not valid" and include a truth assignment that is a counterexample.
+        (You do not need to complete a full truth table.)
+
+//////////////
+
+Part 1 (complete steps (a) and (b)):
+
+    Premise: p → q
+    Conclusion: q → p
+
+
+a) Translations:
+
+
+
+b) Valid or Invalid?
+
+
+
+
+//////////////
+
+Part 2 (complete steps (a) and (b)):
+
+    Premises: (p ∨ q) → r, ¬q, ¬r
+    Conclusion: ¬p
+
+
+a) Translations:
+
+
+
+b) Valid or Invalid?
+
+
+
+
+//////////////
+
+Part 3 (complete steps (a) and (b)):
+
+    Premises: ¬(q ∧ s), p → s, r → q
+    Conclusion: ¬r ∧ ¬s
+
+
+a) Translations:
+
+
+
+b) Valid or Invalid?

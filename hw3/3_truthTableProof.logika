@@ -1,0 +1,17 @@
+//Suppose we have a logical argument with the following premises and conclusion:
+
+    //Premises: p ∨ ¬q, r → q, r ∨ q
+    //Conclusion: p ∧ q
+
+//Use a truth table to prove that the argument is valid. You should get the message "Logika verified"
+//when you finish.
+
+//After your truth table(s), write a brief explanation of why you know
+//from your truth tables that the argument is valid.
+
+//PUT YOUR EXPLANATION HERE (start each line with //)
+
+
+
+
+//PUT YOUR TRUTH TABLE BELOW THIS LINE

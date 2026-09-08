@@ -1,0 +1,12 @@
+Prove that the statements:
+
+    p ∧ q → r
+
+and
+
+    (p → r) ∧ (q → r)
+
+are NOT logically equivalent.
+
+Afterward, explain why you have shown that the two statements are not equivalent.
+What would you expect to happen differently if both statements were equivalent?
