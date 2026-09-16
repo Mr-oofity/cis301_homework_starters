@@ -22,11 +22,14 @@ Part 1 (complete steps (a) and (b)):
 
 
 a) Translations:
-
+If it is cold, then I will build a snowman. 
+As such, if I build a snowman, then it is cold.
 
 
 b) Valid or Invalid?
-
+Invalid, as if it is a cold day and you do not build a snowman, (q = F, p = T)
+The conclusion will read true, as the promise isn't broken because it never starts(F -> T = T)
+But the premise is false because the promise is broken (T -> F = F)
 
 
 
@@ -39,12 +42,13 @@ Part 2 (complete steps (a) and (b)):
 
 
 a) Translations:
-
-
+If it is cold or I build a snowman, then it snowed. I did not build a snowman. It didn't snow. 
+As such, it is not cold outside
 
 b) Valid or Invalid?
-
-
+Valid, as the only way all three statements are true is if all three are false
+Building a snowman is forced false, snowing is force false, meaning (p v F) -> F
+To avoid breaking the promise, the conclusion must be that p=F, or that it is not cold outside.
 
 
 //////////////
@@ -56,7 +60,15 @@ Part 3 (complete steps (a) and (b)):
 
 
 a) Translations:
-
+I am not building a snowman or I am not sledding. If it is cold, then I am sledding. If it snowed, then I am building a snowman
+As such, it is not snowing and I'm not sledding.
 
 
 b) Valid or Invalid?
+(q=F|T,s=F,p=F,r=F)
+valid
+
+For the conclusion to be fulfilled, r and s must be false for it to be true. (q=?,s=F,p=?,r=F)
+!(q ^ s) turns to (!q v !s) by Demorgans Law, so as long as q or s is False, first statement is true. s is already false, so its true
+(p -> s) as s is false, p must be false to prevent a false promise. (q=?,s=F,p=F,r=F)
+(r -> q) as r is false, the value of q does not matter. (q=T|F,s=F,p=F,r=F)

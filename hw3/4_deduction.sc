@@ -19,8 +19,21 @@ import org.sireum.justification.natded.prop._
         Proof(
             1 (  p & q            ) by Premise,
             2 (  m & n & r & t  ) by Premise,
-         
-            //FINISH THE PROOF HERE
+            //Proving first premise
+            3 ( p ) by AndE1(1),
+            4 ( q ) by AndE2(1),
+            
+            //Proving second premise
+            5 (m & n & r) by AndE1(2),
+            6 (t) by AndE2(2),
+
+            //Isolating n
+            7 (m & n) by AndE1(5), 
+            8 (n ) by AndE2(7),
+            
+            //Proving the conclusion
+            9 ( n & t ) by AndI(8, 6),
+            10 (n & t & p) by AndI(9, 3)
         )
         //@formatter:on
     )

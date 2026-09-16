@@ -10,3 +10,14 @@ are NOT logically equivalent.
 
 Afterward, explain why you have shown that the two statements are not equivalent.
 What would you expect to happen differently if both statements were equivalent?
+
+p ^ q -> r  and (p -> r) ^ (q -> r) are not equivalent because in a situation where
+p=F, q=T, and R=F, the ending values are mismatched. 
+
+F ^ q -> r becomes F ^ T -> F becomes F -> F which ends as T
+because the if was never fulfilled, so the promise never began meaning it can't be broken
+
+(p -> r) ^ (q -> r) becomes (F -> F) ^ (T -> F) becomes (T) ^ (F) which ends as F
+because one promise begins and breaks, meaning one side of the and is false, meaning it all is false
+
+If they both were equivalent statements, p=F, q=T, and R=F should either have matching endings for both statements. 
