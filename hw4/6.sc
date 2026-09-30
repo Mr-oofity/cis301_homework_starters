@@ -17,8 +17,41 @@ You will need to complete BOTH proofs below. When you are finished, run a Logika
   Deduce(
     ( p __>: q ) |-  ( !p | q )
       Proof(
-        //COMPLETE PROOF HERE
+        1 (p __>: q)   by Premise,
+        
+        // Use LEM to create an adjacent reference equation to conclusion
+        2 SubProof(
+          3 Assume(!(p | !p)),
 
+          //Prove for !p
+          4 SubProof(
+            5 Assume(p),
+            6 (p | ! p) by OrI1(5),
+            7 (F) by NegE(6, 3)
+          ),
+
+          8 (!p) by NegI(4),
+          9 (p | !p) by OrI2(8),
+          10 (F) by NegE(9, 3)
+        ),
+
+        //Find adjacent equation with PCB, which will be used as a base for OrE
+        11 (p | !p) by PbC(2), 
+
+        //Use components of adjacent equation to solve OrE for conclusion
+        12 SubProof(
+          13 Assume(p),
+          14 (q) by ImplyE(1, 13), 
+          15 (!p | q) by OrI2(14)      
+        ),
+
+        16 SubProof(
+          17 Assume(!p),
+          18 (!p | q) by OrI1(17)
+        ),
+
+        //Prove conclusion with OrE
+        19 (!p | q) by OrE(11, 12, 16)
       )
   )
 }
@@ -27,7 +60,30 @@ You will need to complete BOTH proofs below. When you are finished, run a Logika
   Deduce(
     ( !p | q ) |-  ( p __>: q )
       Proof(
-        //COMPLETE PROOF HERE
+        1 (!p | q) by Premise,
+
+        //Find q
+        2 SubProof(
+          3 Assume (p),
+
+          //Show not p can not be true
+          4 SubProof(
+            5 Assume(!p),
+            6 (F) by NegE(3, 5),
+            100 (q) by BottomE(6)
+          ),
+  
+
+          7 SubProof(
+            8 Assume(q),
+            9 (!p | q) by OrI2(8)
+          ),
+          
+          
+          10 (q) by OrE(1, 4, 7)
+        ),
+
+        11 (p __>: q) by ImplyI(2)
       )
   )
 }

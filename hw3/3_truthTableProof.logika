@@ -10,8 +10,9 @@
 //from your truth tables that the argument is valid.
 
 //PUT YOUR EXPLANATION HERE (start each line with //)
-//From the truth table, we can see 2 valid instances where when the conclusion is true
-//the rest of the statements are also true at the same time. 
+
+//From the truth table, we can see 2 valid instances where when the premise is true
+//the conclusion is also true at the same time. 
 
 //PUT YOUR TRUTH TABLE BELOW THIS LINE
 

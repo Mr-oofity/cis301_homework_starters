@@ -17,7 +17,28 @@ import org.sireum.justification.natded.prop._
     ( !(p | q) ) |-  ( !p & !q)
       Proof(
         //COMPLETE PROOF HERE
+        1 (!(p | q)) by Premise,
 
+        //Prove that p being true is bad
+        2 SubProof(
+          3 Assume(p),
+          4 (p | q) by OrI1(3),
+          5 (F) by NegE(4, 1)
+        ),
+
+        //Prove that q being true is also bad
+        6 SubProof(
+          7 Assume(q),
+          8 (p | q) by OrI2(7),
+          9 (F) by NegE(8, 1)
+        ),
+        
+        //create neg variables
+        10 (!p) by NegI(2),
+        11 (!q) by NegI(6),
+
+        //Prove ending
+        12 (!p & !q) by AndI(10, 11)
       )
   )
 }
