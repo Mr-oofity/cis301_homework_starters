@@ -19,7 +19,7 @@ You will need to complete BOTH proofs below. When you are finished, run a Logika
       Proof(
         1 (p __>: q)   by Premise,
         
-        // Use LEM to create an adjacent reference equation to conclusion
+        // Use LEM to create an adjacent always possible reference equation to conclusion
         2 SubProof(
           3 Assume(!(p | !p)),
 

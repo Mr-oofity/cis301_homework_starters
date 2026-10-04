@@ -13,23 +13,18 @@ You will need to complete BOTH proofs below. When you are finished, run a Logika
 (Ctrl-Shift-W or Command-Shift-W) Your file should say "Logika verified".
 */
 
-/*@pure def hw4_prob7_part1(p: B, q: B): Unit = {
+@pure def hw4_prob7_part1(p: B, q: B): Unit = {
   Deduce(
     ( !(p __>: q) ) |-  ( p & !q )
       Proof(
         1 (!(p __>: q)) by Premise,
-
+        
         2 SubProof(
-          3 Assume(p & !q),
-          
-          4 (p) by AndE1(3),
-          5 (!q) by AndE2(3),
-
           
         )
       )
   )
-}*/
+}
 
 @pure def hw4_prob7_part2(p: B, q: B): Unit = {
   Deduce(
