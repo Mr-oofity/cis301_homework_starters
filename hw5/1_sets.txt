@@ -1,0 +1,123 @@
+//Homework 5
+//1_sets.txt
+
+Here is a list of symbols that might be useful for pasting into problems:
+∈	∉
+∅
+⋂	⋃
+⊂   ⊆
+⋀	⋁
+ℕ   ℤ
+≠   ≤   ≥
+
+
+///
+
+1. Use set builder notation to describe the following sets:
+    a) {-24,-16,-8,0,8,16,24,32}
+
+
+
+
+    b) {11,14,17,20,23}
+
+
+
+
+
+///
+
+2. Suppose we have two sets:  A = {-8,-2,0,1,4,17,25,37} and B = {-5,-2,1,2,5,8,17,22,37,40,44}
+
+    a) A ⋂ B = ?
+
+
+
+
+    b) A ⋃ B = ?
+
+
+
+
+    c) A - B = ?
+
+
+
+
+    d) B - A = ?
+
+
+
+
+///
+
+3. Describe the following sets by listing all its elements (put brackets, { }, around each
+    list of elements):
+
+    a) {x : x ∈ Z, |4x| < 25}
+
+
+
+
+    b) {x : x = 2k, k ∈ ℕ, k ≤ 9} ⋂ {x : x = n^2, n ∈ ℤ, -4 ≤ n ≤ 4}
+
+
+
+
+    c) {x : x = 2k, k ∈ ℕ, k ≤ 9} ⋃ {x : x = n^2, n ∈ ℤ, -4 ≤ n ≤ 4}
+
+
+
+
+    d) {x : x is an odd-numbered month with 31 days}
+
+
+
+
+
+///
+
+4. Using the simplest notation possible, describe the elements in the set:
+
+    {x : x ∈ ℤ, x ≥ -5} ∪ {x : x ∈ ℤ, x ≤ 7}
+
+
+
+
+
+
+
+///
+
+5. Suppose A ⋃ B = A for two sets A and B. What does that tell us about A and B? Explain.
+
+
+
+
+
+
+
+///
+
+6. Suppose A ⋂ B = A for two sets A and B. What does that tell us about A and B? Explain.
+
+
+
+
+
+
+///
+
+7. Suppose A, B, and C are sets.
+    a) If A ⋃ C = B ⋃ C, must A = B? Either provide a counterexample (with specific sets
+        for A, B, and C) or explain why this must be true.
+
+
+
+
+
+///
+
+    b) If A ⋂ C = B ⋂ C, must A = B? Either provide a counterexample (with specific sets
+        for A, B, and C) or explain why this must be true.
+
