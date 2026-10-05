@@ -1,6 +1,13 @@
 //Homework 5
 //2_predicates.txt
 
+Quantifiers - helps describe all or some elements in a set
+
+    ∀ - universal quantifier, "for all", "all"
+        describing something about ALL elements in a set
+
+    ∃ - existential quantifier, "there exists",
+        "some", "at least one", 
 
 We have the following set of students:
 
@@ -36,13 +43,14 @@ Consider the following predicate logic statements:
 
     a) Express the statement in words
 
-
+        All students in domain are not CS majors
 
 
 
     b) Is the statement true or false in our set of students? Explain.
 
-
+        False, Marie and Jane are CS majors, debunking condition
+    
 
 
 ///
@@ -51,12 +59,14 @@ Consider the following predicate logic statements:
 
     a) Express the statement in words
 
+        At least one student in domain lives in kansas, but not on campus
 
 
 
 
     b) Is the statement true or false in our set of students? Explain.
-
+        
+        True, Bob and Jack fulfill condition
 
 
 
@@ -66,12 +76,13 @@ Consider the following predicate logic statements:
 
     a) Express the statement in words
 
-
+        All students in domain who live off campus, must but CS majors
 
 
 
     b) Is the statement true or false in our set of students? Explain.
 
+        False, Jack lives off campus, but is an ECE major
 
 
 
@@ -81,12 +92,12 @@ Consider the following predicate logic statements:
 
     a) Express the statement in words
 
-
+        None of the students in domain live on campus and are CS majors
 
 
     b) Is the statement true or false in our set of students? Explain.
 
-
+        False, Marie is a CS major who lives on campus
 
 
 ///
@@ -95,8 +106,9 @@ Consider the following predicate logic statements:
 
    a) Express the statement in words
 
-
+        Not all CS students live on campus
 
 
    b) Is the statement true or false in our set of students? Explain.
 
+        True, Jane is a CS student who lives off campus.

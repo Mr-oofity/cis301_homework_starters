@@ -1,6 +1,16 @@
 //Homework 5
 //1_sets.txt
 
+- Common sets in math:
+
+    ℕ: natural numbers (integers 1 and bigger)
+    ℤ: whole numbers (all integers)
+    ℚ: rational numbers (written as a fraction)
+    ℝ: real numbers (can be represented on the number line)
+    ℂ: complex numbers (can be written as a + bi)
+    ∅: empty set, {}
+
+
 Here is a list of symbols that might be useful for pasting into problems:
 ∈	∉
 ∅
@@ -16,10 +26,12 @@ Here is a list of symbols that might be useful for pasting into problems:
 1. Use set builder notation to describe the following sets:
     a) {-24,-16,-8,0,8,16,24,32}
 
-
+    {x: x=8n, -3 ≤ n ≤ 4, x ∈ ℤ}
 
 
     b) {11,14,17,20,23}
+
+    {x: x=11+3(n-1), n <= 5, x ∈ ℕ}
 
 
 
@@ -31,22 +43,24 @@ Here is a list of symbols that might be useful for pasting into problems:
 
     a) A ⋂ B = ?
 
-
+    {-2, 1, 17, 37}
 
 
     b) A ⋃ B = ?
 
+    {-8, -5, -2, 0, 1, 2, 4, 5, 8, 17, 22, 25, 37, 40, 44}
 
 
 
     c) A - B = ?
 
+    {-8, 0, 4, 25}
 
 
 
     d) B - A = ?
 
-
+    {-5, 2, 5, 8, 22, 40, 44}
 
 
 ///
@@ -55,21 +69,27 @@ Here is a list of symbols that might be useful for pasting into problems:
     list of elements):
 
     a) {x : x ∈ Z, |4x| < 25}
+    4x=25
+    x=25/4
+    x=6.25 (7)
 
-
+    {-6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6}
 
 
     b) {x : x = 2k, k ∈ ℕ, k ≤ 9} ⋂ {x : x = n^2, n ∈ ℤ, -4 ≤ n ≤ 4}
+    1:{2, 4, 6, 8, 10, 12, 14, 16, 18}
+    2:{0, 1, 4, 9, 16}
 
-
-
+    {4, 16}
 
     c) {x : x = 2k, k ∈ ℕ, k ≤ 9} ⋃ {x : x = n^2, n ∈ ℤ, -4 ≤ n ≤ 4}
+    1:{2, 4, 6, 8, 10, 12, 14, 16, 18}
+    2:{0, 1, 4, 9, 16}
 
-
-
+    {0, 1, 2, 4, 6, 8, 9, 10, 12, 14, 16, 18}
 
     d) {x : x is an odd-numbered month with 31 days}
+    {January, March, July}
 
 
 
@@ -80,8 +100,8 @@ Here is a list of symbols that might be useful for pasting into problems:
 4. Using the simplest notation possible, describe the elements in the set:
 
     {x : x ∈ ℤ, x ≥ -5} ∪ {x : x ∈ ℤ, x ≤ 7}
-
-
+    
+    {x : x ∈ ℤ, -5 ≤ x ≤ 7}
 
 
 
@@ -91,7 +111,7 @@ Here is a list of symbols that might be useful for pasting into problems:
 
 5. Suppose A ⋃ B = A for two sets A and B. What does that tell us about A and B? Explain.
 
-
+    This implies that B has to contain either nothing or only elements that are inside of A. 
 
 
 
@@ -101,7 +121,7 @@ Here is a list of symbols that might be useful for pasting into problems:
 
 6. Suppose A ⋂ B = A for two sets A and B. What does that tell us about A and B? Explain.
 
-
+    This implies all enements within A and B are the same.
 
 
 
@@ -112,8 +132,13 @@ Here is a list of symbols that might be useful for pasting into problems:
     a) If A ⋃ C = B ⋃ C, must A = B? Either provide a counterexample (with specific sets
         for A, B, and C) or explain why this must be true.
 
+    No
+    A: {0, 1, 2}
+    B: {3, 4, 5}
+    C: {0, 1, 2, 3, 4, 5}
 
-
+    A ⋃ C = {0, 1, 2, 3, 4, 5}
+    B ⋃ C = {0, 1, 2, 3, 4, 5}
 
 
 ///
@@ -121,3 +146,10 @@ Here is a list of symbols that might be useful for pasting into problems:
     b) If A ⋂ C = B ⋂ C, must A = B? Either provide a counterexample (with specific sets
         for A, B, and C) or explain why this must be true.
 
+    No
+    A: {1, 2}
+    B: {0, 1, 2, 3}
+    C: {1, 2}
+
+    A ⋂ C = {1, 2}
+    B ⋂ C = {1, 2}
