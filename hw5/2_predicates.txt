@@ -59,7 +59,7 @@ Consider the following predicate logic statements:
 
     a) Express the statement in words
 
-        At least one student lives in kansas, but not on campus
+        Some students lives in kansas, but not on campus
 
 
 
