@@ -29,7 +29,7 @@ Jack    | ECE       | True          | False             |
 
 And the following predicates over our set of students:
 
-IsCS(x) : whether student x is a CS major
+InCS(x) : whether student x is a CS major
 
 InKS(x): whether student x is a Kansas resident
 
