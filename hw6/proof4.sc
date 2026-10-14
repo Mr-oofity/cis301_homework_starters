@@ -23,9 +23,13 @@ import org.sireum.justification.natded.prop._
        ∃((x: T) => sweet(x))
     )
     Proof(
-      //COMPLETE PROOF HERE
+      1 (∀((x: T) => (candy(x) __>: sweet(x)))) by Premise,
+      2 (candy(Reeses)) by Premise,
 
+      3 (candy(Reeses) __>: sweet(Reeses)) by AllE[T](1),
+      4 (sweet(Reeses)) by ImplyE(3, 2),
 
+      5 ( ∃((x: T) => sweet(x)) ) by ExistsI[T](4)
     )
   )
 }

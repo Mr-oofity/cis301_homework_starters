@@ -21,27 +21,33 @@ In each of the following problems:
 1) ∀ x (P(x) → D(x))
 
 Expressed in English:
-
+* All programmers have a dog.
 
 
 
 Predicate logic negation:
+!(∀ x (P(x) → D(x)))
+∃ x !(P(x) → D(x))
+∃ x (P(x) & !D(x)) 
 
-
-
+*    ∃((x: T) => (P(x) ⋀ ¬D(x)))
 
 ///////////////////////////////////////////
 
 2) ∃ y (R(y) ⋀ ¬P(y))
 
 Expressed in English:
-
+* Some people play rugby but don't program.
 
 
 
 Predicate logic negation:
+!(∃ y (R(y) ⋀ ¬P(y)))
+∀ y !(R(y) ⋀ ¬P(y))
+∀ y (!R(y) V P(y))
+∀ y (R(y) -> P(y))
 
-
+*    ∀((y: T) => (R(y) → P(y))
 
 
 ///////////////////////////////////////////
@@ -49,13 +55,17 @@ Predicate logic negation:
 3) ∃ x ∃ y (D(x) ⋀ M(x, y))
 
 Expressed in English:
-
+* Some people own dogs and are the manager of someone. 
 
 
 
 Predicate logic negation:
+!(∃ x ∃ y (D(x) ⋀ M(x, y)))
+∀ x ∀ y !(D(x) ⋀ M(x, y))
+∀ x ∀ y (!D(x) V !M(x, y))
+∀ x ∀ y (D(x) → !M(x, y))
 
-
+*    ∀((x: T) => ∀((y: T) => (D(x) → ¬M(x, y))))
 
 
 ///////////////////////////////////////////
@@ -63,8 +73,15 @@ Predicate logic negation:
 4) ∀ x ∃ y (P(x) → M(x, y) ⋀ R(y))
 
 Expressed in English:
-
+* All programmers are managers of a rugby player.
 
 
 
 Predicate logic negation:
+!(∀ x ∃ y (P(x) → M(x, y) ⋀ R(y)))
+∃ x ∀ y !(P(x) → M(x, y) ⋀ R(y))
+∃ x ∀ y !(!P(x) V (M(x, y) ⋀ R(y)))
+∃ x ∀ y (P(x) ⋀ !(M(x, y) ⋀ R(y)))
+∃ x ∀ y (P(x) ⋀ (!M(x, y) V !R(y)))
+
+*   ∃((x: T) => ∀((y: T) => (P(x) ⋀ (¬M(x, y) ⋁ ¬R(y)))))

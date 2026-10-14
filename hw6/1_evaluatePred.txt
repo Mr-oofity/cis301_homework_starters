@@ -7,7 +7,7 @@ Explain your answer.
 1) Domain: ℤ
     Statement: ∀ m ∃ n (m < 2n)
 
-
+True, for any m there is an n within the domain which will be greater. For example: m=5, n=5, 5 < 10
 
 
 
@@ -18,7 +18,7 @@ Explain your answer.
 2) Domain: ℤ
     Statement: ∃ n ∃ m (n^2 + m^2 = 10)
 
-
+True, if n=3 and m=1, then 3^2 + 1^2 = 9 + 1 = 10
 
 
 
@@ -29,7 +29,7 @@ Explain your answer.
 3) Domain: ℤ
     Statement: ∃ n ∃ m (n^2 + m^2 = 7)
 
-
+False, no integer combination can create added perfect square values that reach 7
 
 
 
@@ -39,7 +39,8 @@ Explain your answer.
 4) Domain: ℝ (the set of real numbers)
     Statement: ∀ x ∃ y (x^2 = y)
 
-
+True, the square of a real number will result in another real number. Y can be any real number, so one value will always be able to work
+example: x = 1.5, y = 2.25. 1.5^2 = 2.25
 
 
 
@@ -50,3 +51,4 @@ Explain your answer.
 5) Domain: ℝ (the set of real numbers)
     Statement: ∀ x ∃ y (x = y^2)
 
+False, for all positive x's this can be true, but for negative x's they are impossible for a square value to reach
