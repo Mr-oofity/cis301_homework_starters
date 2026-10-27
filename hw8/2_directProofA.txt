@@ -1,0 +1,8 @@
+//Homework 8
+//2_directProofA.txt
+
+
+Use a direct proof to prove the following proposition:
+
+The product of two odd integers is odd.
+

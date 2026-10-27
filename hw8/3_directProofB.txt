@@ -1,0 +1,7 @@
+//Homework 8
+//3_directProofB.txt
+
+
+Use a direct proof to prove the following proposition:
+
+If x and y are even integers and z is an odd integer, then xyz is even.

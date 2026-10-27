@@ -1,0 +1,7 @@
+
+Use mathematical induction to prove that the sum of the first n even natural numbers equals n(n+1).
+That is, that:
+
+    2 + 4 + ... + 2n = n(n+1)
+
+(Note that we are considering "2" to be the first even natural number.)

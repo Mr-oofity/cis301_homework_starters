@@ -1,0 +1,9 @@
+//Homework 8
+//5_proofContradiction.txt
+
+
+Use proof by contradiction to prove the following proposition:
+
+The sum of an irrational and a rational number is irrational.
+
+

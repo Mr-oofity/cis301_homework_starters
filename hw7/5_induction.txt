@@ -1,0 +1,2 @@
+Use mathematical induction to prove that if n is a positive integer, then
+n^5 - n is divisible by 5.

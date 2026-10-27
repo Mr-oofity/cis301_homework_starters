@@ -1,0 +1,10 @@
+//Homework 8
+//4_proofContrapositive.txt
+
+
+
+Use the contrapositive to prove the following proposition:
+
+If n is an integer and 3n + 2 is even, then n is even.
+
+
