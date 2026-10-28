@@ -1,3 +1,18 @@
 Use mathematical induction to prove that if n is natural number, then:
 
     1*1! + 2*2! + ... + n*n! = (n+1)! - 1
+
+    hypothosis
+    1*1! + 2*2! + ... + k*k! + (k+1)*(k+1)! = ((k+1)+1)! - 1
+                                            = (k+2)! - 1
+
+    Solve
+    1*1! + 2*2! + ... + k*k! + (k+1)*(k+1)! = (k+1)! - 1 + (k+1) * (k+1)!
+                                            = ((k+1)! + (k+1) * (k+1)!) - 1
+                                            = (k+1)!((k+1)+1) - 1
+                                            = (k+2)(k+1)! - 1 //k+2 * (k+1)! = (k+2)!
+                                            = (k+2)! - 1 //bingo
+                                            = ((k+1)+1)! - 1
+
+            
+

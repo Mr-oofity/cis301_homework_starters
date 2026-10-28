@@ -21,8 +21,23 @@ import org.sireum.justification.natded.prop._
         ∃((x: T) => !student(x))
       )
       Proof(
-        //COMPLETE PROOF HERE
+        1 (∀((x: T) => (student(x) __>: csharp(x)))) by Premise,
+        2 (∃((x: T) => !csharp(x))) by Premise,
 
+        3 Let((jerry: T) => SubProof(
+          4 Assume(!csharp(jerry)),
+          5 (student(jerry) __>: csharp(jerry)) by AllE[T](1),
+          6 SubProof(
+            7 Assume(student(jerry)),
+            8 (csharp(jerry)) by ImplyE(5, 7),
+            9 (F) by NegE(8, 4)
+          ),
+          10 (!student(jerry)) by NegI(6),
+          11 (∃((x: T) => !student(x))) by ExistsI[T](10)
+        )),
+        
+        12 (∃((x: T) => !student(x))) by ExistsE[T](2, 3)
+        
       )
   )
 }

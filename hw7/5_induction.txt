@@ -1,2 +1,18 @@
 Use mathematical induction to prove that if n is a positive integer, then
 n^5 - n is divisible by 5.
+
+1^5-1 = 1-1 = 0, which is technically divisible
+2^5-2 = 32-2 = 30 which is divisible by 5
+
+k^5 - k = 5x
+k(k^4 - 1) = 5x
+k^4 - 1 = (5x/k)
+
+(k+1)^5 - (k+1) = (k+1)((k+1)^4-1)
+                = (k+1)((k^4+4k^3+6k^2+4k+1)-1)
+                = (k+1)(k^4-1)(4k^3+6k^2+4k+1)
+                = (k+1)(5x/k)(4k^3+6k^2+4k+1)
+                = (5x+(5x/k))(20xk^2+30xk+20x+(5x/k))
+                = 5 * (x+(x/k))(4xk^2+6xk+4x+(x/k))
+                
+                //Anything multiplied by 5 is a multiple of 5, bingo!

@@ -5,3 +5,17 @@ That is, that:
     2 + 4 + ... + 2n = n(n+1)
 
 (Note that we are considering "2" to be the first even natural number.)
+
+hypothosis
+    2 + 4 + ... + 2k + 2(k+1) = (k+1)((k+1)+1)
+                              = (k+1)(k+2)
+                              = k^2+3k+2
+
+Solve
+    2 + 4 + ... + 2k + 2(k+1) = k(k+1) + (2(k+1))
+                              = k^2+k + 2k+2
+                              = k^2+3k+2 //Bingo
+                              = (k+1)(k+2)
+                              = (k+1)((k+1)+1)
+
+
